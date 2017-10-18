@@ -56,12 +56,12 @@
 		F5C0A2151F69F47B00861DD6 /* UIKitExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				F5C0A2161F69F47B00861DD6 /* UIKitExtensions.h */,
 				F5C0A2201F69F4A800861DD6 /* CGSize+Extension.swift */,
 				F5C0A2221F69F4B500861DD6 /* CGRect+Extension.swift */,
 				F5C0A2241F69F4C500861DD6 /* UIColor+Extension.swift */,
 				F5C0A2261F69F4D200861DD6 /* UIView+Extensions.swift */,
 				F5C0A2281F69F4E100861DD6 /* UIImageView+Extensions.swift */,
+				F5C0A2161F69F47B00861DD6 /* UIKitExtensions.h */,
 				F5C0A2171F69F47B00861DD6 /* Info.plist */,
 			);
 			path = UIKitExtensions;
