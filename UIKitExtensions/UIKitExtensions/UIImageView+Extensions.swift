@@ -10,13 +10,13 @@ import UIKit
 
 public extension UIImageView {
     
-    public convenience init(_ f: CGRect, _ image: UIImage) {
+    convenience init(_ f: CGRect, _ image: UIImage) {
         
         self.init(frame: f)
         self.image = image
     }
     
-    public func circle() {
+    func circle() {
         
         self.layer.cornerRadius = self.bounds.height / 2.0
         self.clipsToBounds = true;

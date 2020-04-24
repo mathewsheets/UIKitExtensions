@@ -10,12 +10,12 @@ import UIKit
 
 public extension UIView {
     
-    public convenience init(frame: CGRect, color: UIColor) {
+    convenience init(frame: CGRect, color: UIColor) {
         self.init(frame: frame)
         self.backgroundColor = color
     }
     
-    public func asImage() -> UIImage {
+    func asImage() -> UIImage {
         
         UIGraphicsBeginImageContext(bounds.size)
         guard let currentContext = UIGraphicsGetCurrentContext() else {

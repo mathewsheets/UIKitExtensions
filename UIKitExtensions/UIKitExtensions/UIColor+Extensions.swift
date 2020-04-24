@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIColor {
     
-    public convenience init(red: Int, green: Int, blue: Int) {
+    convenience init(red: Int, green: Int, blue: Int) {
         assert(red >= 0 && red <= 255, "Invalid red component")
         assert(green >= 0 && green <= 255, "Invalid green component")
         assert(blue >= 0 && blue <= 255, "Invalid blue component")
@@ -18,11 +18,11 @@ public extension UIColor {
         self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
     }
     
-    public convenience init(hex:Int) {
+    convenience init(hex:Int) {
         self.init(red:(hex >> 16) & 0xff, green:(hex >> 8) & 0xff, blue:hex & 0xff)
     }
     
-    public func hexDescription(_ includeAlpha: Bool = false) -> String {
+    func hexDescription(_ includeAlpha: Bool = false) -> String {
         if self.cgColor.numberOfComponents == 4 {
             let components = self.cgColor.components
             let red = Float((components?[0])!) * 255.0
@@ -39,11 +39,11 @@ public extension UIColor {
         }
     }
     
-    public func lighter(_ amount : CGFloat = 0.25) -> UIColor {
+    func lighter(_ amount : CGFloat = 0.25) -> UIColor {
         return hueColorWithBrightness(1 + amount)
     }
     
-    public func darker(_ amount : CGFloat = 0.25) -> UIColor {
+    func darker(_ amount : CGFloat = 0.25) -> UIColor {
         return hueColorWithBrightness(1 - amount)
     }
     
