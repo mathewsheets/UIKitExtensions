@@ -7,19 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F5AA0F6224536613009CEEB1 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AA0F6124536613009CEEB1 /* UIViewController+Extensions.swift */; };
+		F5AA0F6424537029009CEEB1 /* UIScreen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AA0F6324537029009CEEB1 /* UIScreen+Extensions.swift */; };
 		F5C0A2181F69F47B00861DD6 /* UIKitExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C0A2161F69F47B00861DD6 /* UIKitExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F5C0A2251F69F4C500861DD6 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C0A2241F69F4C500861DD6 /* UIColor+Extensions.swift */; };
 		F5C0A2271F69F4D200861DD6 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C0A2261F69F4D200861DD6 /* UIView+Extensions.swift */; };
 		F5C0A2291F69F4E100861DD6 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C0A2281F69F4E100861DD6 /* UIImageView+Extensions.swift */; };
+		F5E32CCE24537CB100AF5EC3 /* CGExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E32CCD24537CB100AF5EC3 /* CGExtensions.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F5AA0F6124536613009CEEB1 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		F5AA0F6324537029009CEEB1 /* UIScreen+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extensions.swift"; sourceTree = "<group>"; };
 		F5C0A2131F69F47B00861DD6 /* UIKitExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIKitExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5C0A2161F69F47B00861DD6 /* UIKitExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIKitExtensions.h; sourceTree = "<group>"; };
 		F5C0A2171F69F47B00861DD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5C0A2241F69F4C500861DD6 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		F5C0A2261F69F4D200861DD6 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		F5C0A2281F69F4E100861DD6 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		F5E32CC824537AAA00AF5EC3 /* CGExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CGExtensions.framework; path = ../Carthage/Build/iOS/CGExtensions.framework; sourceTree = "<group>"; };
+		F5E32CCD24537CB100AF5EC3 /* CGExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CGExtensions.framework; path = Carthage/Build/iOS/CGExtensions.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5E32CCE24537CB100AF5EC3 /* CGExtensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +46,7 @@
 			children = (
 				F5C0A2151F69F47B00861DD6 /* UIKitExtensions */,
 				F5C0A2141F69F47B00861DD6 /* Products */,
+				F5E32CC724537AAA00AF5EC3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,13 +61,24 @@
 		F5C0A2151F69F47B00861DD6 /* UIKitExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				F5C0A2241F69F4C500861DD6 /* UIColor+Extensions.swift */,
+				F5AA0F6124536613009CEEB1 /* UIViewController+Extensions.swift */,
 				F5C0A2261F69F4D200861DD6 /* UIView+Extensions.swift */,
+				F5C0A2241F69F4C500861DD6 /* UIColor+Extensions.swift */,
 				F5C0A2281F69F4E100861DD6 /* UIImageView+Extensions.swift */,
+				F5AA0F6324537029009CEEB1 /* UIScreen+Extensions.swift */,
 				F5C0A2161F69F47B00861DD6 /* UIKitExtensions.h */,
 				F5C0A2171F69F47B00861DD6 /* Info.plist */,
 			);
 			path = UIKitExtensions;
+			sourceTree = "<group>";
+		};
+		F5E32CC724537AAA00AF5EC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5E32CCD24537CB100AF5EC3 /* CGExtensions.framework */,
+				F5E32CC824537AAA00AF5EC3 /* CGExtensions.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +103,7 @@
 				F5C0A20F1F69F47B00861DD6 /* Frameworks */,
 				F5C0A2101F69F47B00861DD6 /* Headers */,
 				F5C0A2111F69F47B00861DD6 /* Resources */,
+				F5E32CCC24537ABD00AF5EC3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -138,12 +159,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F5E32CCC24537ABD00AF5EC3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/CGExtensions.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/CGExtensions.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F5C0A20E1F69F47B00861DD6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5AA0F6224536613009CEEB1 /* UIViewController+Extensions.swift in Sources */,
 				F5C0A2291F69F4E100861DD6 /* UIImageView+Extensions.swift in Sources */,
+				F5AA0F6424537029009CEEB1 /* UIScreen+Extensions.swift in Sources */,
 				F5C0A2271F69F4D200861DD6 /* UIView+Extensions.swift in Sources */,
 				F5C0A2251F69F4C500861DD6 /* UIColor+Extensions.swift in Sources */,
 			);
@@ -281,6 +326,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UIKitExtensions/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -303,6 +352,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UIKitExtensions/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
