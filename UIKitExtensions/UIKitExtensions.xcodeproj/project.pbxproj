@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F55C875824539B68006C8F2C /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55C875724539B68006C8F2C /* UIImage+Extension.swift */; };
+		F55C875A24539C27006C8F2C /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55C875924539C27006C8F2C /* NSObject+Extensions.swift */; };
+		F55C875C2453BCE4006C8F2C /* CGRect+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55C875B2453BCE4006C8F2C /* CGRect+Extension.swift */; };
+		F55C875E2453BCF3006C8F2C /* CGSize+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55C875D2453BCF3006C8F2C /* CGSize+Extension.swift */; };
 		F5AA0F6224536613009CEEB1 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AA0F6124536613009CEEB1 /* UIViewController+Extensions.swift */; };
 		F5AA0F6424537029009CEEB1 /* UIScreen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AA0F6324537029009CEEB1 /* UIScreen+Extensions.swift */; };
 		F5C0A2181F69F47B00861DD6 /* UIKitExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C0A2161F69F47B00861DD6 /* UIKitExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F55C875724539B68006C8F2C /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		F55C875924539C27006C8F2C /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
+		F55C875B2453BCE4006C8F2C /* CGRect+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Extension.swift"; sourceTree = "<group>"; };
+		F55C875D2453BCF3006C8F2C /* CGSize+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Extension.swift"; sourceTree = "<group>"; };
 		F5AA0F6124536613009CEEB1 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		F5AA0F6324537029009CEEB1 /* UIScreen+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extensions.swift"; sourceTree = "<group>"; };
 		F5C0A2131F69F47B00861DD6 /* UIKitExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIKitExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,11 +69,15 @@
 		F5C0A2151F69F47B00861DD6 /* UIKitExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				F55C875D2453BCF3006C8F2C /* CGSize+Extension.swift */,
+				F55C875B2453BCE4006C8F2C /* CGRect+Extension.swift */,
 				F5AA0F6124536613009CEEB1 /* UIViewController+Extensions.swift */,
 				F5C0A2261F69F4D200861DD6 /* UIView+Extensions.swift */,
-				F5C0A2241F69F4C500861DD6 /* UIColor+Extensions.swift */,
 				F5C0A2281F69F4E100861DD6 /* UIImageView+Extensions.swift */,
+				F55C875724539B68006C8F2C /* UIImage+Extension.swift */,
+				F5C0A2241F69F4C500861DD6 /* UIColor+Extensions.swift */,
 				F5AA0F6324537029009CEEB1 /* UIScreen+Extensions.swift */,
+				F55C875924539C27006C8F2C /* NSObject+Extensions.swift */,
 				F5C0A2161F69F47B00861DD6 /* UIKitExtensions.h */,
 				F5C0A2171F69F47B00861DD6 /* Info.plist */,
 			);
@@ -187,8 +199,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5AA0F6224536613009CEEB1 /* UIViewController+Extensions.swift in Sources */,
+				F55C875C2453BCE4006C8F2C /* CGRect+Extension.swift in Sources */,
 				F5C0A2291F69F4E100861DD6 /* UIImageView+Extensions.swift in Sources */,
+				F55C875A24539C27006C8F2C /* NSObject+Extensions.swift in Sources */,
 				F5AA0F6424537029009CEEB1 /* UIScreen+Extensions.swift in Sources */,
+				F55C875E2453BCF3006C8F2C /* CGSize+Extension.swift in Sources */,
+				F55C875824539B68006C8F2C /* UIImage+Extension.swift in Sources */,
 				F5C0A2271F69F4D200861DD6 /* UIView+Extensions.swift in Sources */,
 				F5C0A2251F69F4C500861DD6 /* UIColor+Extensions.swift in Sources */,
 			);
@@ -248,7 +264,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -305,7 +321,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

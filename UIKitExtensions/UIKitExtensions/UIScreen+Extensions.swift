@@ -12,6 +12,7 @@ import CGExtensions
 extension UIScreen {
     
     var minEdge: CGFloat {
+        
         return UIScreen.main.bounds.minEdge
     }
     
